@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  </head>
+  <style>
+    .body {
+      font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+        Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+        segoe ui emoji, segoe ui symbol;
+
+      /* box-sizing: border-box; */
+      /* margin: 0px; */
+    }
+
+    .main-container {
+      margin: 0;
+      padding: 0;
+      font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      color: #1c1d1f;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      gap: 26px;
+      padding: 6px;
+    }
+
+    .logo {
+      margin: 0;
+      padding: 0px;
+      /* height: 93px; */
+      width: 88px;
+    }
+
+    .cat-nav {
+      z-index: 1;
+    }
+    /* .but-category{
+        border: 0px;
+        background-color: #fff;
+         
+    }
+
+    .Category{
+        cursor: pointer;
+        position: relative; 
+    }
+
+    .Category:hover {
+      color: #5624d0;
+    }
+
+    .cat-list{
+      list-style-type: none;
+      display: none;
+      position: absolute;
+      left: 100px;
+      top: 0px;
+
+    }
+
+   .Category:hover > ul{
+    display: block;
+    background-color: #fff;
+  
+} */
+
+    .search {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      width: 531px;
+      border: 1.5px solid #1c1d1f;
+      border-radius: 5076px;
+      background-color: #f7f9fa;
+      margin: 0px;
+      gap: 12px;
+    }
+
+    .form {
+      /* display: flex;
+    align-items: center; */
+    }
+
+    /* Search icon */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    .search-lens-icon{
+      padding-left: 15px;
+    }
+
+    .inpt {
+      border: 0px;
+      background-color: transparent;
+    }
+
+    .udmy-business:hover {
+      color: #5624d0;
+    }
+
+    .Teach-on-Udemy:hover {
+      color: #5624d0;
+    }
+
+    .My-learning:hover {
+      color: #5624d0;
+    }
+
+    .usr-name {
+      background-color: #1c1d1f;
+      border-radius: 50%;
+      color: #fff;
+      padding: 5px;
+    }
+
+    /* Favorite icon */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    /* Cart */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    /* notification */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    .section {
+      z-index: -1;
+      position: relative;
+    }
+
+    .section-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      list-style-type: none;
+      border-top: 2px solid #d1d7dc;
+      background: #fff;
+      margin: 1px;
+      padding: 10px;
+    }
+
+    /* backward arrow */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    /* Forward arrow */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    .banner {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: -1;
+    }
+
+    .but-back-arrow {
+      border: none;
+      color: #fff;
+      background-color: #1c1d1f;
+      border-radius: 50%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 33px;
+    }
+
+    .but-forward-arrow {
+      border: none;
+      color: #fff;
+      background-color: #1c1d1f;
+      border-radius: 50%;
+      position: absolute;
+      right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 33px;
+    }
+    .bill-board {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      width: 35vw;
+      left: 4.2rem;
+      top: 2.4rem;
+      font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+        Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+        segoe ui emoji, segoe ui symbol;
+      font-weight: 400;
+      line-height: 1.1;
+      font-size: 1.3rem;
+      color: #1c1d1f;
+      padding: 11px;
+    }
+
+    .footer {
+      color: #1c1d1f;
+    }
+
+    .a-section {
+      background: #1c1d1f;
+      border-top: 1px solid #3e4143;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 4.8rem;
+      padding-right: 4.8rem;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+        Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+        segoe ui emoji, segoe ui symbol;
+      font-weight: 400;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .a-section-world {
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02rem;
+      font-size: 1.5rem;
+    }
+
+    .teach-udemy {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 13px 18px 13px 17px;
+    }
+
+    .b-section {
+      background: #1c1d1f;
+      color: #fff;
+      padding-left: 4.8rem;
+      padding-right: 3rem;
+      border-top: 1px solid #3e4143;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+        Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+        segoe ui emoji, segoe ui symbol;
+      font-weight: 700;
+      line-height: 3.4;
+      font-size: 1.2rem;
+    }
+
+    .img-items {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    /* language icon */
+    .material-symbols-sharp {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    }
+
+    .c-section {
+      padding-left: 4.8rem;
+      padding-right: 4.8rem;
+      padding-bottom: 4.5rem;
+      background: #1c1d1f;
+      border-top: 1px solid #3e4143;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+        Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+        segoe ui emoji, segoe ui symbol;
+      font-weight: 370;
+      /* line-height: 3.4;
+      font-size: 1.2rem;
+      padding-top: 2.4rem; */
+    }
+
+    .csec-a {
+    display: flex;
+    align-items: center;
+    gap: 663px;
+    padding-top: 42px;
+    padding-right: 4px;
+    }
+
+    .but-lang {
+      background: transparent;
+      color: #fff;
+      margin: 0px;
+      border: 1px solid;
+      padding: 11px 34px 6px 35px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .lang-icon {
+      display: flex;
+      align-items: center;
+      background: transparent;
+      /* padding: 0 0 17.4rem 31rem; */
+    }
+
+    .csec-list-one {
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      /* color: white; */
+      /* text-decoration: none; */
+      padding: 0px;
+    }
+
+    .csec-lists ul li {
+      color: white;
+      list-style-type: none;
+    }
+
+    .csec-lists {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      justify-content: space-between;
+      /* list-style-type: none; */
+    }
+    
+
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .d-section{
+    display: flex;
+    align-items: center;
+    background: currentColor;
+    padding-left: 4.8rem;
+    padding-right: 5.8rem;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .footer-logo{
+      height: 38px;
+    width: 105px;
+    padding: 5px 4px 2px 6px;
+    margin: 11px;
+    background-color: currentColor;
+    color: white;
+    }
+
+    .footer-content{
+          color: white;
+    }
+    /****************************************  Category **************/
+    .nested-dropdowns {
+      /* Border */
+
+      display: flex;
+
+      /* Reset list styles */
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nested-dropdowns li {
+      cursor: pointer;
+
+      /* Spacing */
+      padding: 0.25rem;
+
+      /* Used to position the sub nested-dropdowns */
+      position: relative;
+    }
+
+    /* The sub nested-dropdowns */
+    .nested-dropdowns ul {
+      /* Border */
+      border: 1px solid black;
+
+      /* Hidden by default */
+      display: none;
+
+      /* Absolute position */
+      left: 0;
+      position: absolute;
+      top: 100%;
+
+      /* Reset styles */
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    /* The second level sub nested-dropdowns */
+    .nested-dropdowns ul ul {
+      left: 100%;
+      position: absolute;
+      top: 0;
+      background-color: #fff;
+      border: 1px solid black;
+    }
+
+    /* Change background color of list item when being hovered */
+    .nested-dropdowns li:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the direct sub nested-dropdowns when hovering the list item */
+    .nested-dropdowns li:hover > ul {
+      display: block;
+    }
+    .cards{
+      padding-top: 3.1rem;
+      padding-bottom: 17px;
+      padding: 8px 19px 30px;
+    }
+
+
+    /* STar fill*/
+.material-symbols-sharp {
+  
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/* Star without */
+/* .material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */
+
+
+
+
+.carousel-container-rating{
+  /* display: flex;
+  flex-direction: column; */
+}
+.first-row{
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  position: relative;
+  transition: transform 0.2s;
+   
+}
+
+.carousel-button-forward{
+  border: none;
+      color: #fff;
+      background-color: #1c1d1f;
+      border-radius: 50%;
+      position: absolute;
+      right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+}
+
+.icon{
+  color: gold;
+  display: flex;
+  align-items: center;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
+
+
+  </style>
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <div class="logo">
+          <a href="">
+            <svg fill="none" viewBox="0 0 91 34">
+              <path
+                fill="#A435F0"
+                d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z"
+              />
+              <path
+                fill="#000"
+                d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z"
+              />
+            </svg>
+          </a>
+        </div>
+        <nav class="cat-nav">
+          <ul class="nested-dropdowns">
+            <li>
+              <div class="nested-dropdowns__item">Categories</div>
+              <ul>
+                <li>
+                  <div class="nested-dropdowns__item">Development</div>
+                  <ul>
+                    <li>
+                      <div class="nested-dropdowns__item">Web Development</div>
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>React JS</li>
+                        <li>CSS</li>
+                        <li>Angular</li>
+                      </ul>
+                    </li>
+                    <li>Mobile Development</li>
+                    <li>Game Development</li>
+                    <li>Software Testing</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Business</div>
+                  <ul>
+                    <li>Entrepreneurship</li>
+                    <li>Communication</li>
+                    <li>Management</li>
+                    <li>Sales</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Finance & Accounting</div>
+                  <ul>
+                    <li>Accounting</li>
+                    <li>Compliance</li>
+                    <li>Economics</li>
+                    <li>Finance</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">IT & Software</div>
+                  <ul>
+                    <li>IT Certification</li>
+                    <li>Network & Security</li>
+                    <li>Hardware</li>
+                    <li>Other IT & Software</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Office Productivity</div>
+                  <ul>
+                    <li>Microsoft</li>
+                    <li>Apple</li>
+                    <li>Google</li>
+                    <li>SAP</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Personal Development</div>
+                  <ul>
+                    <li>Personal Productivity</li>
+                    <li>Leadership</li>
+                    <li>Carrer Development</li>
+                    <li>Happiness</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Design</div>
+                  <ul>
+                    <li>Web Design</li>
+                    <li>Design Tools</li>
+                    <li>Game Design</li>
+                    <li>Fashion Design</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Marketing</div>
+                  <ul>
+                    <li>Digital Marketing</li>
+                    <li>Search Engine Optimization</li>
+                    <li>Social Media Marketing</li>
+                    <li>Branding</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Health & Fitness</div>
+                  <ul>
+                    <li>Fitness</li>
+                    <li>General Health</li>
+                    <li>Sports</li>
+                    <li>Yoga</li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="nested-dropdowns__item">Music</div>
+                  <ul>
+                    <li>Instruments</li>
+                    <li>Music Production</li>
+                    <li>Vocal</li>
+                    <li>Music Software</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="search">
+          <span class="material-symbols-sharp"  style="padding-left: 15px;">search</span>
+          <input type="text" class="inpt" placeholder="Search for anything" />
+        </div>
+        <div class="Udemy-Business">
+          <span class="udmy-business"> Udemy Business</span>
+        </div>
+        <div class="Teach-Udemy">
+          <span class="Teach-on-Udemy"> Teach on Udemy</span>
+        </div>
+        <div class="learning">
+          <span class="My-learning"> My Learning</span>
+        </div>
+        <div class="favorite">
+          <span class="material-symbols-sharp">favorite </span>
+        </div>
+        <div class="cart">
+          <span class="material-symbols-sharp">shopping_cart_checkout</span>
+        </div>
+        <div class="notification">
+          <span class="material-symbols-sharp">notifications</span>
+        </div>
+        <div class="user-name">
+          <span class="usr-name">SM</span>
+        </div>
+      </div>
+      <div class="section">
+        <ul class="section-bar">
+          <li>Development</li>
+          <li>Business</li>
+          <li>Finance & Accounting</li>
+          <li>IT & Software</li>
+          <li>Office Productivity</li>
+          <li>Personal Development</li>
+          <li>Design</li>
+          <li>Marketing</li>
+          <li>Health & Fitness</li>
+          <li>Music</li>
+        </ul>
+      </div>
+      <div class="banner">
+        <div>
+          <button class="but-back-arrow">
+            <span class="material-symbols-sharp"> chevron_left</span>
+          </button>
+        </div>
+        <div class="bill-board">
+          <h1>Last day for these savings!</h1>
+          <p>
+            Courses that meet today’s challenges (and tomorrow’s). They start at
+            just ₹499.
+          </p>
+        </div>
+        <img
+          width="1333"
+          height="400"
+          alt=""
+          src="https://img-c.udemycdn.com/notices/featured_carousel_slide/image/fc85a9d3-5b65-4ab0-be6f-d53724452be8.png"
+        />
+        <div>
+          <button class="but-forward-arrow">
+            <span class="material-symbols-sharp">chevron_right</span>
+          </button>
+        </div>
+      </div>
+      <div class="cards">
+        <h2 >What to learn next</h2>
+        <div >
+          <h2 >Recommended for you</h2>
+        </div>
+        <div class="carousel-container">
+          <div class="first-row">
+
+          <div class="carousel-container-item1">
+          <img src="https://img-c.udemycdn.com/course/240x135/3893330_8df1.jpg" alt="">  
+          
+          <div class="carousel-container-content">
+              <h3>PHP for Beginners 2023</h3>
+              <div>Web Coding</div>
+              <div class="carousel-container-rating">
+                
+                <span class="icon" >
+                  <span>4.1</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp" style="font-variation-settings:'FILL' 0, 'wght' 400,'GRAD' 0,'opsz' 48">star</span>
+               </span>
+               </div>
+              <div class="carousel-container-price">
+                 <span>₹2,499</span>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-container-item2">
+          <img src="https://img-c.udemycdn.com/course/240x135/3518698_0aff.jpg" alt="">  
+          
+          <div class="carousel-container-content">
+              <h3>Python for Beginners</h3>
+              <div>Web Coding</div>
+              <div class="carousel-container-rating">
+                <span class="icon" >
+                <span>4.4</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp" style="font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48">star</span>
+               </span>
+              </div>
+              <div class="carousel-container-price">
+                 <span>₹2,499</span>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-container-item3">
+          <img src="https://img-c.udemycdn.com/course/240x135/4435576_a1dc.jpg" alt="">  
+          
+          <div class="carousel-container-content">
+              <h3>HTML,CSS & JavaScript</h3>
+              <div>Web Coding</div>
+              <div class="carousel-container-rating">
+                <span class="icon" >
+                <span>4.2</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp" style="font-variation-settings:'FILL' 0, 'wght' 400,'GRAD' 0,'opsz' 48">star</span>
+              </span>
+              </div>
+              <div class="carousel-container-price">
+                 <span>₹1,999</span>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-container-item4">
+          <img src="https://img-c.udemycdn.com/course/240x135/3526008_d891_5.jpg" alt="">  
+          
+          <div class="carousel-container-content">
+              <h3>Python & Flask</h3>
+              <div>Web Coding</div>
+              <div class="carousel-container-rating">
+                <span class="icon" >
+                <span>4.6</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp" style="font-variation-settings:'FILL' 0, 'wght' 400,'GRAD' 0,'opsz' 48">star</span>
+               </span>
+              </div>
+              <div class="carousel-container-price">
+                 <span>₹1,699</span>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-container-item5">
+          <img src="https://img-c.udemycdn.com/course/240x135/4918848_e7e1.jpg" alt="">  
+          
+          <div class="carousel-container-content">
+              <h3>Advance Sql & Postgres</h3>
+              <div>Web Coding</div>
+              <div class="carousel-container-rating">
+                <span class="icon" >
+                <span>4.5</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp">star</span>
+               <span class="material-symbols-sharp" style="font-variation-settings:'FILL' 0, 'wght' 400,'GRAD' 0,'opsz' 48">star</span>
+              </span>
+              </div>
+              <div class="carousel-container-price">
+                 <span>₹2,299</span>
+              </div>
+          </div>
+          </div>
+          <div>
+          <button class="carousel-button-forward">
+            <span class="material-symbols-sharp">chevron_right</span>
+          </button>
+        </div>
+
+        </div>
+        
+        </div>
+         
+
+      </div>
+      <footer class="footer">
+        <div class="a-section">
+          <div>
+            <div class="a-section-world">Teach the world online</div>
+            <div>
+              Create an online video course, reach students across the globe,
+              and earn money
+            </div>
+          </div>
+          <div>
+            <a href="" class="teach-udemy"><span>Teach on Udemy</span></a>
+          </div>
+        </div>
+        <div class="b-section">
+          <div>
+            <span
+              >Top companies choose Udemy Business to build in-demand career
+              skills</span
+            >
+          </div>
+          <div class="img-items">
+            <!-- <img
+              alt="Nasdaq"
+              height="44"
+              width="115"
+              src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg"
+            /> -->
+            <img
+              alt="Volkswagen"
+              height="44"
+              width="44"
+              src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg"
+            />
+            <img
+              alt="Box"
+              height="44"
+              width="67"
+              src="https://s.udemycdn.com/partner-logos/v4/box-light.svg"
+            />
+            <img
+              alt="NetApp"
+              height="44"
+              width="115"
+              src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg"
+            />
+            <img
+              alt="Eventbrite"
+              height="44"
+              width="115"
+              src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg"
+            />
+          </div>
+        </div>
+        <div class="c-section">
+          <div class="csec-a">
+            <div class="csec-lists">
+              <ul class="csec-list-one">
+                <li><a class="list-items" href=""> <span >Udemy Business</span>  </a></li>
+                <li><a class="list-items" href=""><span >Teach on Udemy</span></a></li>
+                <li><a href=""><span>Get the app</span></a></li>
+                <li><a href=""><span>About us</span></a></li>
+                <li><a href=""><span>Contact us</span></a></li>
+              </ul>
+             
+              <ul class="csec-list-one">
+                <li><a href=""><span>Carrers</span></a></li>
+                <li><a href=""><span>Blog</span></a></li>
+                <li><a href=""><span>Help and Support</span></a></li>
+                <li><a href=""><span>Affiliate</span></a></li>
+                <li><a href=""><span>Investors</span></a></li>
+              </ul>
+              <ul class="csec-list-one">
+                <li><a href=""><span>Terms</span></a></li>
+                <li><a href=""><span>Private policy</span></a></li>
+                <li><a href=""><span>Cookies</span></a></li>
+                <li><a href=""><span>Sitemap</span></a></li>
+                <li><a href=""><span>Accessibility statement</span></a></li>
+              </ul>
+            </div>
+            <div class="lang-icon">
+              <button class="but-lang">
+                <span class="material-symbols-sharp">language</span>
+                <span>English</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="d-section">
+          <div class="footer-logo">
+            <a href="">
+            <svg fill="none" viewBox="0 0 91 34">
+              <path
+                fill="#A435F0"
+                d="M14.05 8.112L7.024 4.056 0 8.112V4.056L7.025 0l7.026 4.056v4.056h-.001z"
+              />
+              <path
+                fill="#000"
+                d="M0 11.518h3.68v8.941c0 2.31 1.725 3.436 3.345 3.436 1.634 0 3.346-1.156 3.346-3.467v-8.91h3.68v9.154c0 2.128-.669 3.77-2.007 4.896-1.339 1.125-3.011 1.673-5.05 1.673-2.037 0-3.71-.547-5.017-1.673C.669 24.443 0 22.862 0 20.763v-9.245zM45.866 22.63c-1.114.992-2.383 1.478-3.83 1.478-2.64 0-4.41-1.504-4.61-3.833h11.89s.08-.752.08-1.458c0-2.19-.7-4.015-2.13-5.505-1.398-1.49-3.222-2.22-5.443-2.22-2.341 0-4.258.73-5.779 2.22-1.49 1.49-2.25 3.436-2.25 5.87v.12c0 2.403.76 4.319 2.25 5.749 1.49 1.429 3.467 2.159 5.87 2.159 2.794 0 5.017-1.102 6.685-3.002l-2.733-1.578zm-6.994-7.463c.82-.639 1.825-.973 2.95-.973 1.064 0 1.946.334 2.707 1.004.726.61 1.118 1.359 1.152 2.22H37.52c.118-.89.568-1.64 1.353-2.25zM82.91 29.276C81.417 32.801 79.855 34 77.46 34H75.8v-3.262h1.342c.824 0 1.59-.31 2.32-1.994l.73-1.686-6.296-15.54h3.741l4.471 11.192 4.593-11.192h3.74l-7.53 17.758zM28.377 5.649v7.257c-1.206-1.08-3.082-1.723-4.896-1.723-2.16 0-3.984.76-5.474 2.31-1.46 1.521-2.19 3.406-2.19 5.687 0 2.282.73 4.167 2.19 5.718 1.49 1.521 3.315 2.282 5.474 2.282 2.49 0 4.064-.979 4.896-1.746v1.411h3.65V5.65h-3.65zm-1.095 16.878c-.882.882-2.007 1.339-3.315 1.339-1.308 0-2.372-.457-3.254-1.339-.85-.882-1.277-2.007-1.277-3.345 0-1.339.426-2.464 1.277-3.346.882-.882 1.946-1.338 3.254-1.338s2.433.456 3.315 1.338c.912.882 1.37 2.007 1.37 3.346 0 1.338-.458 2.463-1.37 3.345zM68.222 11.214c-2.772 0-4.213 1.15-5.2 2.258-.395-.753-1.507-2.258-4.105-2.258-2.196 0-3.49 1.11-4.136 1.9V11.52h-3.618v15.327h3.618v-8.82c0-2.068 1.278-3.558 2.98-3.558 1.735 0 2.738 1.308 2.738 3.406v8.971h3.619v-8.82c0-2.098 1.246-3.558 3.04-3.558 1.734 0 2.737 1.308 2.737 3.405v8.972h3.65v-9.488c0-3.996-2.148-6.142-5.323-6.142z"
+              />
+            </svg>
+          </a>
+          </div>
+          <div class="footer-content">© 2023 Udemy, Inc.</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
